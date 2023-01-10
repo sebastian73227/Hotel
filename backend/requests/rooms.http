@@ -1,0 +1,41 @@
+@api = http://localhost:3000/rooms
+//us-cdbr-east-06.cleardb.net 
+GET {{api}}
+
+###
+GET {{api}}/9
+
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/clear/2
+
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Pedro Dominguezzz",
+    "room": 10,
+    "numberPeople": 1,
+    "entryDate": "01-11-2023",
+    "outputDate": "2022-11-12"
+}
+
+###
+DELETE {{api}}/9
+
+###
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "name": "Juan X",
+    "numberPeople": 4,
+    "entrydate": "2015-10-12",
+    "outputDate": "2015-10-12"
+}
+
+
